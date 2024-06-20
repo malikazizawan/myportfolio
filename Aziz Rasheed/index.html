@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/regular.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>   
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           
+            <nav>
+                <p><span>Aziz </span> Rasheed</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I,m <span>Aziz Rasheed</span><br>From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg" >
+                    
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p class="about-pera">I am Aziz Rasheed, a proficient WordPress and Web & App with expertise in enhancing web aesthetics and functionality. My ultimate goal is to deliver inspiring and impactful digital experiences that leave a lasting impression.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>WordPress</span><br> Development</li>
+                            <li><span>Web & App</span><br> Development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>Internship at SKY Tech</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Matric From SIMS School</li>
+                            <li><span>2024</span><br>Inter From Bilal Colagate</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- --------- services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>WordPress Website Development</h2>
+                    <p>Custom WordPress website development according to client requirements.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-end Development</h2>
+                    <p>Designing and developing user-friendly and responsive interfaces using HTML, CSS, and JavaScript.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- ----------portfolio-------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2> 
+            
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <p>Social Media App</p>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <p>Music App</p>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <p>Online Shopping App</p>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <p>Social Media App</p>
+                </div>
+            </div>
+            <a href="#" class="my_btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-envelope"></i> pvtmalikazizawan@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 03252740465</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="images/my-cv.pdf" download class="btn">Download Cv</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+            </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    
+    
+
+<script type="text/javascript" src="slick/jquery.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+<script>
+    $('.work-list').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+</body>
+</html>
